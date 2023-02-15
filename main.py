@@ -227,12 +227,12 @@ class App(ctk.CTk):
         if "bunkr" in self.selected_hosts:
             self.upload_button_status("Bunkr...", 'disabled')
             
-            #try:
-            url = bunkr(self.bunkr_token, self.album_entry.get(), self.files)
-            self.links_box.insert("end", f"{url}\n")
-            self.upload_button_status("Bunkr completed!", 'normal')
-            #except:
-            #    self.upload_button_status("Bunkr failed!", 'normal')
+            try:
+                url = bunkr(self.bunkr_token, self.album_entry.get(), self.files)
+                self.links_box.insert("end", f"{url}\n")
+                self.upload_button_status("Bunkr completed!", 'normal')
+            except:
+                self.upload_button_status("Bunkr failed!", 'normal')
           
         if "pixeldrain" in self.selected_hosts:
             self.upload_button_status("Pixeldrain...", 'disabled')

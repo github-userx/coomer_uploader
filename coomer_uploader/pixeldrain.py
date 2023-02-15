@@ -18,12 +18,7 @@ def pixeldrain(files_to_upload):
     return f"https://pixeldrain.com/l/{identifier}"
 
 
-def create_list(ids):
-    '''files = []
-    
-    for idx, idd in enumerate(ids):
-        files.append[str(idx)] = idd'''
-        
+def create_list(ids):        
     json_data = {
         'anonymous': True, 
         'files': [{'id': idd} for idd in ids]

@@ -7,12 +7,7 @@ def bunkr(token, album_name, files_to_upload):
     files = []
     
     for file in files_to_upload:
-        #files.append(("files[]", open(file, 'rb')))
         files = (('files[]', open(file, 'rb')),)
-        
-        '''json_data = {
-            'files[]': [open(file, 'rb') for file in files_to_upload]
-            }'''
         
         r = requests.post(
             server,
