@@ -24,7 +24,7 @@ coomer_uploader is a multihost uploader with a simple gui interface.
 
 Uploading to Bunkr requires the user to be registered so you will need to get your
 token from your account's dashboard. You will also need to provide an album name
-that doesn't already exists in your account.
+that doesn't already exist in your account.
 
 ## Supported Hosts
 
